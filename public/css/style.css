@@ -113,7 +113,7 @@
 
     .events > section{
         float: left;
-        margin-left: 1em;
+        margin-left: .8em;
     }
 
     #editTodo{
@@ -137,6 +137,7 @@
     #priority{
         margin-top: 1.5em;
     }
+
 @media screen and (min-width: 600px) {
     .wrapper{
         max-width: 30em;
