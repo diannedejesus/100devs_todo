@@ -139,3 +139,15 @@ async function togglePriority(){
         console.log(err)
     }
 }
+
+async function randomQuotes(){
+    const url = "https://zenquotes.io/api/random";
+   //const proxy = "https://cors-anywhere.herokuapp.com/"; for testing on localhost
+   //const currentQuote = await fetch(proxy + url)
+   const currentQuote = await fetch(url)
+   const getQuote = await currentQuote.json()
+   
+  document.querySelector('blockquote').innerText = `${getQuote[0].q} --${getQuote[0].a}`
+  //console.log(document.querySelector('blockquote'))
+}
+randomQuotes()
