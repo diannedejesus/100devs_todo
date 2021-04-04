@@ -92,7 +92,7 @@
     }
 
     .events > section{
-        border: 1px solid black;
+        border: 2px solid black;
         width: 29%;
         height: 10em;
         padding: 5px;
@@ -107,7 +107,7 @@
         font-size: 2rem;
     }
 
-    .fa-star{
+    .fa-star, fa-calendar{
         display: block;
     }
 

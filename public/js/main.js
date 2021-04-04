@@ -88,6 +88,8 @@ async function showAdditionalTasks(){
                     newElement.setAttribute("class", "starButton fas fa-star");
                 }else if(data[i].todo_tag !== 'event'){
                     newElement.setAttribute("class", "starButton far fa-star");
+                }else{
+                    newElement.setAttribute("class", "far fa-calendar");
                 }
                 
                 newElement.innerText = `${data[i].todo_item}`
