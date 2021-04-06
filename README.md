@@ -21,10 +21,10 @@ The next thing I would do with this application is building a couple of more lay
 
 ## Lessons Learned:
 
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+In this project, I had a hard deadline and lots of ideas. All these seemed simple but altogether would push the final product back. So I need to recheck the scope of the project with the functionality needed. I was able to get the basic functionality need and some additional functionality by rethinking the implementation and integrating it with what I had in a much simpler way.
 
 ## Other Projects:
-Take a look at these couple examples that I have in my portfolio:
+Take a look at these projects that I have:
 
 **Tic Tac Toe:** https://github.com/diannedejesus/knowledge-aquisition/tree/main/tictactoe
 
