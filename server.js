@@ -23,7 +23,7 @@ app.use(express.json())
 
 app.get('/', async (request, response) => {
     try{
-        const todoItems = await db.collection('items').find().sort({date_item: -1}).toArray()
+        const todoItems = await db.collection('items').find().sort({date_item: 1}).toArray()
         response.render('index.ejs', { info: todoItems })
     }catch(err) {
         console.error(err)
