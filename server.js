@@ -15,11 +15,11 @@ MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
     })
     .catch(error => console.error(error))        
     
-
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true}))
 app.use(express.json())
+
 
 app.get('/', async (request, response) => {
     try{
