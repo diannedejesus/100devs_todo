@@ -3,7 +3,7 @@ This application is built with simplicity in mind, it is all about getting the p
 
 **Link to project:** https://app-que-hacer.herokuapp.com/
 
-![alt tag](http://placecorgi.com/1200/650)
+![alt tag](https://github.com/diannedejesus/100devs_todo/blob/main/todoapp.PNG)
 
 ## How It's Made:
 
