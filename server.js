@@ -41,9 +41,10 @@ app.get('/getAdditional', async (request, response) => {
 })
 
 app.post('/addTodo', (request, response) => {
-    //console.log(request.body.todo_tag)
+    console.log(request.body.todo_items)
+    let modifiedTodoItem = request.body.todo_item.replace(/\s+/g, ' ').trim()
     db.collection('items').insertOne({
-        todo_item: request.body.todo_item, 
+        todo_item: modifiedTodoItem, //.replace(/\s+/g, ' ').trim(), 
         date_item: request.body.todo_date ? new Date(request.body.todo_date) : new Date(),
         todo_tag: request.body.todo_tag, 
         todo_checked: false
@@ -66,7 +67,8 @@ app.delete('/deleteTodo', (request, response) => {
 
 
 app.put('/changePriority', (request, response) => {
-    db.collection('items').updateOne({todo_item: request.body.todo_item},{
+    const todoItem = request.body.todo_item
+    db.collection('items').updateOne({todo_item: todoItem},{
         $set: {
             todo_tag: request.body.todo_tag
           }
@@ -83,6 +85,7 @@ app.put('/changePriority', (request, response) => {
 })
 
 app.put('/markCompleted', (request, response) => {
+    console.log(request.body.todo_item)
     db.collection('items').updateOne({todo_item: request.body.todo_item},{
         $set: {
             todo_checked: request.body.todo_checked

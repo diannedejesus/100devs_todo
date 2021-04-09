@@ -36,6 +36,7 @@ async function checkTodoItem(){
     const todo_item = this.parentNode.querySelectorAll('.item')[0].innerText
     const item_date = this.parentNode.querySelectorAll('.date')[0].innerText
     const todo_checked = this.parentNode.querySelectorAll('.fa-square')[0]
+    //console.log(todo_item)
 
     try{
         const response = await fetch('markCompleted', {
