@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="To-do application">
+    <meta name="description" content="a to-do app">
+    <meta name="keywords" content="to-do, app, applicaiton">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
     <title>ToDo Application</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -71,16 +77,24 @@
 
         <h3>Add a To-do:</h3>
 
-        <form action="/addTodo" method="POST">
-            <input type="text" placeholder="todo" name="todo_item">
-            <input type="date" name="todo_date">
-            <select name='todo_tag'>
-                <option value=""></option>
-                <option value="event">Event</option>
-                <option value="priority">Priority</option>
-                <option value="additional">Additional</option>
-                <!--<option value="break">Break</option>-->
-            </select>
+        <form id='addNewTodo' action="/addTodo" method="POST">
+            <div>
+                <label for='todoItemForm'>New item</label>
+                <input id='todoItemForm' type="text" placeholder="todo" name="todo_item">
+            </div>
+            <div>
+                <label for='todoDateForm'>Due date</label>
+                <input id='todoDateForm' type="date" name="todo_date">
+            </div>
+            <div>
+                <label for='todoTypeForm'>Type</label>
+                <select id='todoTypeForm' name='todo_tag'>
+                    <option value="priority">Priority</option>
+                    <option value="additional">Additional</option>
+                    <option value="event">Event</option>
+                    <!--<option value="break">Break</option>-->
+                </select>
+            </div>
             <input type="submit">
         </form>
         
